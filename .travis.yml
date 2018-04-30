@@ -1,4 +1,5 @@
 language: ruby
+cache: bundler
 sudo: false
 before_install: gem install bundler
 bundler_args: --without development
@@ -6,3 +7,7 @@ rvm:
   - 2.3
   - 2.4
   - 2.5
+gemfiles:
+  - gemfiles/rails4_2.gemfile
+  - gemfiles/rails5_1.gemfile
+  - Gemfile
